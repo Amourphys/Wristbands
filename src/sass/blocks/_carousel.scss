@@ -28,10 +28,29 @@
     }
 
     .slick-dots {
+        display: flex !important;
+        list-style: none;
+        justify-content: center;
+        margin-top: 20px;
         padding-left: 0px;
 
-        button {
-            font-size: 0;
+        li {
+            margin: 0 10px 0 10px;
+
+            button {
+                font-size: 0;
+                width: 5px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: #A7A7A2;
+                outline: none;
+            }
+
         }
+
+        li[class="slick-active"] button {
+            background: $color-red;
+        }
+
     }
 }
